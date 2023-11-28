@@ -207,23 +207,23 @@ if __name__ == '__main__':
 
             # Write board to file
             outfile.write(board_to_string(solved_board))
-            outfile.write('\n')
+            outfile.write("\n")
 
-        stats_filename = 'README.txt'
+        stats_filename = 'results_stats.txt'
         statsfile = open(stats_filename, "w")
 
         statsfile.write("Number of Solved Boards : " + str(count))
-        outfile.write('\n')
+        statsfile.write("\n")
         min_time = min(total_times)
         max_time = max(total_times)
         avg_time = sum(total_times) / len(total_times)
         std_time = statistics.stdev(total_times)
         statsfile.write("Minimum Time : " + str(min_time))
-        outfile.write('\n')
+        statsfile.write("\n")
         statsfile.write("Maximum Time : " + str(max_time))
-        outfile.write('\n')
+        statsfile.write("\n")
         statsfile.write("Mean : " + str(avg_time))
-        outfile.write('\n')
+        statsfile.write("\n")
         statsfile.write("Standard Deviation : " + str(std_time))
 
         print("Finishing all boards in file.")
