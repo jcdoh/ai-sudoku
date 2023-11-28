@@ -1,0 +1,5 @@
+Number of Solved Boards : 400
+Minimum Time : 0.06368398666381836
+Maximum Time : 4.4105048179626465
+Mean : 0.4426572149991989
+Standard Deviation : 0.5439744520269633
